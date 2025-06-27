@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world-sleeper
+spec:
+  containers:
+  - name: hello
+    image: busybox
+    command: ["/bin/sh", "-c"]
+    args: ["echo Hello, world; sleep 10000"]
