@@ -20,6 +20,9 @@ metadata:
   namespace: cert-manager
 spec:
   interval: 5m
+  dependsOn:
+    - name: flux-system
+      namespace: flux-system
   chart:
     spec:
       chart: cert-manager
