@@ -9,7 +9,7 @@ spec:
   path: ./clusters/shared/cluster-issuer
   prune: true
   dependsOn:
-    - name: cert-manager
+    - name: cert-manager-kustomization
   sourceRef:
     kind: GitRepository
     name: flux-system
