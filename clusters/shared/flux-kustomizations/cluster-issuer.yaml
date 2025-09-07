@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
+  timeout: 5m
   path: ./../cluster-issuer
   prune: true
   dependsOn:
@@ -13,3 +14,4 @@ spec:
     kind: GitRepository
     name: flux-system
   wait: true
+  retryInterval: 2m

@@ -20,6 +20,7 @@ metadata:
   namespace: cert-manager
 spec:
   interval: 5m
+  timeout: 10m
   chart:
     spec:
       chart: cert-manager
@@ -30,3 +31,6 @@ spec:
         namespace: flux-system
   values:
     crds.enabled: true
+    global:
+      leaderElection:
+        namespace: cert-manager
