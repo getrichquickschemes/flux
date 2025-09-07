@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 10m
   timeout: 5m
-  path: ./../cluster-issuer
+  path: ./clusters/shared/cluster-issuer
   prune: true
   dependsOn:
     - name: cert-manager

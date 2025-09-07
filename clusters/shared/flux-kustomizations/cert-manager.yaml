@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 10m
   timeout: 15m
-  path: ./../cert-manager
+  path: ./clusters/shared/cert-manager
   prune: true
   sourceRef:
     kind: GitRepository
